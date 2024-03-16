@@ -1,5 +1,5 @@
 # This file may be used to create a conda environment using:
-# $ conda env create -f <this file>
+# $ mamba env create -f <this file>
 
 name: gprMax-devel
 dependencies:
@@ -14,13 +14,16 @@ dependencies:
 - pip
 - psutil
 - scipy
+- mpi4py
+- pyopencl
+- humanize
+- numpy-stl
+- terminaltables
+- tqdm
 
 - pip:
-  - humanize
-#  - mpi4py
-  - numpy-stl
-#  - pycuda
-#  - pyopencl
-  - terminaltables
-  - tqdm
+  # - pycuda
   - git+https://github.com/craig-warren/PyEVTK.git
+
+
+# brew install mpich
